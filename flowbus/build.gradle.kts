@@ -36,3 +36,13 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                from(components["release"])
+            }
+        }
+    }
+}
