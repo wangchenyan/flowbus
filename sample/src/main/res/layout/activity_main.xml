@@ -8,10 +8,35 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnStartObserve"
+        android:id="@+id/btnObserve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Observe" />
+        android:text="Observe" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:gravity="center_vertical"
+        android:hint="RESULT"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnObserveSticky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Observe Sticky" />
+
+    <TextView
+        android:id="@+id/tvStickyResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:gravity="center_vertical"
+        android:hint="RESULT"
+        android:padding="12dp" />
 
     <Button
         android:id="@+id/btnPost"
@@ -19,13 +44,4 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Post Event" />
-
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#DDDDDD"
-        android:hint="Result"
-        android:padding="12dp" />
 </LinearLayout>
